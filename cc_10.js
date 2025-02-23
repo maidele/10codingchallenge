@@ -5,7 +5,7 @@ class Product {
       this.id = id;
       this.price=price;
       this.stock=stock;
-    }// Creating a class for producy and their properties
+    }// Creating a class for product and their properties
   
     getDetails() {
       return(`Product:${this.name}, ID: ${this.id}, Price: ${this.price}, Stock:${this.stock}`);
