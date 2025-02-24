@@ -57,7 +57,7 @@ class Inventory {
     this.products.push(product);
 }
 listProducts() {
-  this.products.forEach(product => console.log(product.getDetails()));
+  this.products.forEach(product => console.log(product.getDetails()));//Logging details for task 3
  
 
 
@@ -75,13 +75,14 @@ placeOrder(orderId, product, quantity) {
  }
  listOrders() {
   this.orders.forEach(order => {
-    console.log(order.getOrderDetails());
+    console.log(order.getOrderDetails());//logging details for task 4
    });
  
  
   }
  }
- 
+
+
  const inventory = new Inventory();
  inventory.addProduct(prod1);
  inventory.listProducts();
@@ -95,4 +96,3 @@ placeOrder(orderId, product, quantity) {
  // Expected output: "Order ID: 601, Product: Laptop, Quantity: 2, Total Price: $2400"
  console.log(prod1.getDetails());
  // Expected output: "Product: Laptop, ID: 101, Price: $1200, Stock: 3"
- 
